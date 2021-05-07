@@ -32,67 +32,88 @@
         <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        {% comment %} <script type="text/javascript" src="js/scripts.js"></script> {% endcomment %}
-        <script type="text/javascript" src="js/linkage.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- <script type="text/javascript" src="js/linkage.js"></script> -->
     </head>
     <body>
-        <div class="section" id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e8f2eb;">
-                <a class="navbar-brand" href="#">Samuel Luke</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand">Samuel Luke</a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" style="display: flex; justify-content: center;">
+                <ul class="navbar-nav" id="navSections">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav" id="navLinks">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto: samueluke46@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/samuel-luke"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="www.linkedin.com/in/samuelluke"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="sections">
+            <div class="section" id="home">
+                <h1>Nice to meet you</h1>
+                <div>
+                    <h2>I'm Samuel</h2>
                 </div>
-            </nav>
-        </div>
-        <div class="section" id="home">
-            <h1>Nice to meet you</h1>
-            <h2>I'm Samuel</h2>
-        </div>
-        <div class="section" id="education">
-            <h2>Education</h2>
-        </div>
-        <div class="section" id="experience">
-            <h2>Experience</h2>
-
-        </div>
-        <div class="section" id="skills">
-            <h2>Skills</h2>
-
-        </div>
-        <div class="section" id="portfolio">
-            <h2>Portfolio</h2>
-
-        </div>
-        <div class="section" id="about">
-            <h2>About</h2>
-
-        </div>
-        <div class="section" id="footer">
-            <div>
-                <a>Email</a>
-                <a>Github</a>
-                <a>LinkedIn</a>
+            </div>
+            <div class="section" id="education">
+                <div>
+                    <h2>Education</h2>
+                </div>
+            </div>
+            <div class="section" id="experience">
+                <div>
+                    <h2>Experience</h2>
+                </div>
+            </div>
+            <div class="section" id="skills">
+                <div>
+                    <h2>Skills</h2>
+                </div>
+            </div>
+            <div class="section" id="portfolio">
+                <div>
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="section" id="about">
+                <div>
+                    <h2>About</h2>
+                </div>
+            </div>
+        <div id="footer">
+            <div class="links">
+                <a href="mailto: samueluke46@gmail.com">Email<i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/samuel-luke">Github<i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/samuelluke">LinkedIn<i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </body>

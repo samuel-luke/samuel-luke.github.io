@@ -1,24 +1,22 @@
 /* Variables */
 :root {
-	--main-bg-color: #FFFFFF;
+	--main-bg-color: #ffffff;
+    --alternate-bg-color: #FFF8E7;
 	--content-size: 1140px;
 	--font-color: #444;
-	--primary-color: #e8f2eb;
-	--secondary-color: #9DD1CF;
-	--secondary-color-darker: #85b5b4;
-	--feature-color: #e8f2eb;
-	--content-font-family: Oxygen, Sans-Serif;
-	--content-font-size: 16px;
+	--primary-color: #81b1c9;
+    --primary-color-darker: #55859f;
+	--secondary-color: #e8f2eb;
+	--secondary-color-darker: #cad4cd;
+	--content-font-family: Lucida Console, monospace;
+	--content-font-size: 18px;
 	--header-font-family: Oxygen, Sans-Serif;
 	--header-font-size: 32px;
 }
 
 * {
-    margin: 0;
     line-height: 1.8;
     font-size: var(--content-font-size);
-    display: flex;
-    flex-direction: column;
 }
 
 html {
@@ -28,7 +26,7 @@ html {
 body {
 	background-color: var(--main-bg-color);
 	min-height: 100vh;
-	min-width: fit-content;
+	min-width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -47,6 +45,77 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
 }
 
-.section {
-    padding: 100px, 200px
+nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
+    background-color: var(--primary-color);
+    padding: 50px 25px;
+    transition: .5s ease-in-out;
+    box-shadow: gray 0px 0px 5px;
 }
+
+    nav .navbar-brand {
+        padding: 0;
+        font-size: 28px;
+    }
+
+    nav #navSections {
+        justify-content: center;
+        flex: 1;
+    }
+
+        nav #navSections a {
+            padding: 10px 20px;
+        }
+
+    nav #navLinks {
+        justify-content: end;
+    }
+
+#sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    #sections .section {
+        padding: 100px 150px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+        #sections .section:nth-child(even) {
+            background-color: var(--secondary-color);
+        }
+    
+        #sections .section div {
+            width: var(--content-size);
+        }
+
+        #sections .section div h2 {
+        }
+
+#footer {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    background-color: var(--alternate-bg-color);
+}
+
+    #footer .links{
+        width: var(--content-size);
+        display: flex;
+        justify-content: center;
+    }
+
+        #footer .links a {
+            padding: 0 20px;
+            text-decoration: none;
+
+        }
+
+        #footer .links a i {
+            padding-left: 5px;
+        }
