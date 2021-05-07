@@ -1,0 +1,10 @@
+$(function(){
+    $("#navbar").load("section/navbar.html"); 
+    $("#home").load("section/home.html"); 
+    $("#education").load("section/education.html"); 
+    $("#experience").load("section/experience.html"); 
+    $("#skills").load("section/skills.html"); 
+    $("#portfolio").load("section/portfolio.html"); 
+    $("#about").load("section/about.html"); 
+    $("#footer").load("section/footer.html"); 
+});
