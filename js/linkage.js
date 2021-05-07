@@ -1,10 +1,10 @@
 $(function(){
-    $("#navbar").load("section/navbar.html"); 
-    $("#home").load("section/home.html"); 
-    $("#education").load("section/education.html"); 
-    $("#experience").load("section/experience.html"); 
-    $("#skills").load("section/skills.html"); 
-    $("#portfolio").load("section/portfolio.html"); 
-    $("#about").load("section/about.html"); 
-    $("#footer").load("section/footer.html"); 
+    $("#navbar").load("sections/navbar.html"); 
+    $("#home").load("sections/home.html"); 
+    $("#education").load("sections/education.html"); 
+    $("#experience").load("sections/experience.html"); 
+    $("#skills").load("sections/skills.html"); 
+    $("#portfolio").load("sections/portfolio.html"); 
+    $("#about").load("sections/about.html"); 
+    $("#footer").load("sections/footer.html"); 
 });
