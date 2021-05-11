@@ -15,10 +15,11 @@
 	--header-font-size: 32px;
 }
 
+
+/* Global */
 * {
     line-height: 1.8;
     font-size: var(--content-font-size);
-    scroll-margin-top: 100px;
 }
 
 html {
@@ -42,11 +43,39 @@ p, a, li {
 	opacity: 0.9;
 }
 
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: black;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font-family);
     color: var(--font-color);
 	font-weight: bold;
     opacity: 0.9;
+}
+
+.splitContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whiteCard {
+    margin: 20px 0;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.subtle {
+    font-size: 16px;
+    opacity: .8;
 }
 
 nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
@@ -77,6 +106,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
     nav #navLinks a {
         padding: 0 10px;
+        display: flex;
     }
 
     nav #navLinks i {
@@ -90,7 +120,9 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     justify-content: center;
 }
 
+
     #sections .section {
+        scroll-margin-top: 100px;
         padding: 100px 150px;
         min-height: 90vh;
         display: flex;
@@ -102,7 +134,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             /* box-shadow: 0 0px 15px #ccc; */
         }
     
-        #sections .section div {
+        #sections .section > div {
             width: var(--content-size);
         }
 
@@ -119,7 +151,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             height: 0;
             border-bottom: 50px solid var(--secondary-color);
             border-right: 100vw solid transparent;
-            margin-top: -150px;
+            margin-top: -149px;
             position: absolute;
             left: 0;
         }
@@ -157,12 +189,9 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 }
 
     #home .splitContainer {
-        display: flex;
-        flex-direction: row;
         justify-content: start;
         align-items: center;
         flex-wrap: wrap;
-        width: var(--content-size);
         background-color: rgba(50,50,50,.6);
         border-radius: 0 30px 30px 0;
         margin-left: -150px;
@@ -193,6 +222,62 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         }
 
 
+#sections #education {
+}
+
+    #education #usuLogo {
+        opacity: .3;
+        width: auto;
+        height: 60vh;
+        margin-left: 50px;
+    }
+
+    #education #graduationPic {
+        width: auto;
+        height: 75vh;
+        margin-right: 100px;
+    }
+
+    #education .splitContainer {
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+
+    #education .splitContainer p {
+        margin-bottom: 0;
+    }
+
+    #education #courses {
+        flex: 1;
+    }
+        #education #courses h3 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        #education #courses b {
+            font-size: 18px;
+            opacity: 1;
+        }
+
+        #education #courses li {
+            list-style-type: none;
+            margin: 20px 0;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: max-content;
+            font-size: 16px;
+            opacity: .8;
+        }
+
+        #education #courses li:nth-child(even) {
+            margin-left: auto;
+            text-align: right;
+        }
+
+
+
 #footer {
     width: 100%;
     min-height: 500px;
@@ -200,7 +285,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 100px 100px 50px;
     background-color: var(--alternate-bg-color);
 }
 
@@ -212,10 +297,15 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
         #footer .links a {
             padding: 0 20px;
-            text-decoration: none;
-
         }
 
         #footer .links a i {
             padding-left: 5px;
+        }
+
+        #footer #resumeLink {
+            font-size: 20px;
+            border: 2px solid var(--font-color);
+            padding: 3px 10px;
+            border-radius: 5px;
         }
