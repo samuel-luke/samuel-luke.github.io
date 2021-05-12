@@ -313,6 +313,34 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         margin: 25px 0;
     }
 
+#skills h3 {
+    margin: 100px 0 50px;
+    text-align: center;
+}
+
+#skills .icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+    #skills .icons img {
+        width: auto;
+        height: 100px;
+    }
+
+#skills .skill {
+    margin: 25px;
+}
+
+#skills .skill .progress {
+    background-color: #fff;
+}
+
+#skills .skill .progress-bar {
+    background-color: var(--primary-color-darker);
+}
+
 
 #footer {
     width: 100%;
