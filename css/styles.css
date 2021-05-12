@@ -46,10 +46,13 @@ p, a, li {
 a {
     text-decoration: none;
     transition: .3s;
+    opacity: 1;
+    color: var(--primary-color-darker)
 }
 
 a:hover {
     color: black;
+    text-decoration-line: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
 .subtle {
     font-size: 16px;
     opacity: .8;
+}
+
+.link {
+    font-weight: bold;
+    text-align: center;
 }
 
 nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
@@ -131,7 +139,6 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
         #sections .section:nth-child(even) {
             background-color: var(--secondary-color);
-            /* box-shadow: 0 0px 15px #ccc; */
         }
     
         #sections .section > div {
@@ -142,7 +149,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             height: 0;
             border-bottom: 50px solid var(--secondary-color);
             border-left: 100vw solid transparent;
-            margin-top: -150px;
+            margin-top: -149px;
             position: absolute;
             left: 0;
         }
@@ -175,6 +182,9 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         }
 
         #sections .section div h2 {
+            letter-spacing: 3px;
+            border-left: 8px solid var(--primary-color);
+            padding-left: 20px;
         }
 
 
@@ -202,7 +212,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         width: auto;
     }
 
-        #home h1, #home h2, #home p {
+        #home h1, #home h3, #home p {
             color: var(--font-color-inverted);
             text-shadow: 0px 2px 2px black;
             width: auto;
@@ -222,11 +232,11 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         }
 
 
-#sections #education {
-}
+/* #sections #education {
+} */
 
     #education #usuLogo {
-        opacity: .3;
+        opacity: .5;
         width: auto;
         height: 60vh;
         margin-left: 50px;
@@ -235,7 +245,6 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     #education #graduationPic {
         width: auto;
         height: 75vh;
-        margin-right: 100px;
     }
 
     #education .splitContainer {
@@ -266,7 +275,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             background-color: white;
             padding: 5px 10px;
             border-radius: 5px;
-            width: max-content;
+            width: 90%;
             font-size: 16px;
             opacity: .8;
         }
@@ -276,6 +285,33 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             text-align: right;
         }
 
+
+/* #experience  */
+
+    #experience .jobCard {
+        margin: 50px 0;
+        background-color: var(--secondary-color);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    #experience .jobCard p {
+        margin-bottom: 0;
+    }
+
+    #experience .before-after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    #experience .screenshot {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        margin: 25px 0;
+    }
 
 
 #footer {
@@ -288,6 +324,19 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     padding: 100px 100px 50px;
     background-color: var(--alternate-bg-color);
 }
+    #footer a {
+        color: var(--font-color);
+        opacity: .9;
+    }
+
+    #footer a:hover {
+        color: black;
+    }
+
+    #footer h4 {
+        text-align: center;
+        letter-spacing: 3px;
+    }
 
     #footer .links{
         width: var(--content-size);
