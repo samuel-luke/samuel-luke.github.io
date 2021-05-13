@@ -51,8 +51,7 @@ a {
 }
 
 a:hover {
-    color: black;
-    text-decoration-line: underline;
+    color: black
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 .link {
     font-weight: bold;
     text-align: center;
+    margin: 25px 0;
 }
 
 nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
@@ -185,6 +185,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             letter-spacing: 3px;
             border-left: 8px solid var(--primary-color);
             padding-left: 20px;
+            margin-bottom: 25px;
         }
 
 
@@ -276,7 +277,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             padding: 5px 10px;
             border-radius: 5px;
             width: 90%;
-            font-size: 16px;
+            font-size: 14px;
             opacity: .8;
         }
 
@@ -316,6 +317,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 #skills h3 {
     margin: 100px 0 50px;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 #skills .icons {
@@ -342,6 +344,52 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 }
 
 
+#about .colorSwab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 400px;
+}
+    #about h3 {
+        margin: 100px 0 50px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    #about .colorSwab > div {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    #about .colorSwab p {
+        margin-bottom: 0;
+        margin-left: 25px;
+    }
+
+    #about #colorSwabBlue {
+        background-color: var(--primary-color);
+    }
+
+    #about #colorSwabGreen {
+        background-color: var(--secondary-color);
+    }
+
+    #about #colorSwabLatte {
+        background-color: var(--alternate-bg-color);
+    }
+
+#about img {
+    height: auto;
+    width: 25vw;
+    margin: 50px;
+}
+
+
 #footer {
     width: 100%;
     min-height: 500px;
@@ -361,7 +409,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         color: black;
     }
 
-    #footer h4 {
+    #footer h3 {
         text-align: center;
         letter-spacing: 3px;
     }
