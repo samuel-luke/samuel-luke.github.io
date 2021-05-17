@@ -213,7 +213,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         width: auto;
     }
 
-        #home h1, #home h3, #home p {
+        #home h1, #home h4, #home p {
             color: var(--font-color-inverted);
             text-shadow: 0px 2px 2px black;
             width: auto;
