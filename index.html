@@ -247,6 +247,7 @@
                         <img src="images/skill_icons/python.webp" alt="Python"/>
                         <img src="images/skill_icons/java.webp" alt="Java"/>
                         <img src="images/skill_icons/cpp.png" alt="C++"/>
+                        <img src="images/skill_icons/matlab.png" alt="Matlab"/>
                     </div>
                     <div class="skill">
                         <h5>Python</h5>
@@ -264,6 +265,12 @@
                         <h5>C++</h5>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Matlab</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <h3>Design</h3>
@@ -327,6 +334,64 @@
                 <div class="angle-bottom-right"></div>
                 <div>
                     <h2>Portfolio</h2>
+
+                    <div class="project">
+                        <h3>Farkle</h3>
+                        <p>I created a simulator for the popular dice game Farkle. This was mainly an effort to find the best strategy so I would have an edge against my girlfriend's family. It not only is completely playable with a nice graphical interface, it also allows you to simulate any number of games using a preset of strategies. Once the simulation finishes, it will output the statistics of the games, letting you know the average number of turns it took to win, and thus the best strategy to use.</p>
+                        <p class="subtle">Spoiler: You should keep any dice that adds to your score, and stop rolling once you reach 250 points. Slow and steady.</p>
+                        <p>This is written in Python and shows my ability to create an interface even in a terminal, it also demonstrates my logical programming skills and my desire to solve common problems with coding.</p>
+                        <p class="link">Check out the code on my <a href="https://github.com/samuel-luke/farkle">Github</a></p>
+                        <div class="splitContainer">
+                            <img src="images/farkle_cli.png" alt="Farkle CLI">
+                            <img src="images/farkle_stats.png" alt="Farkle Stats">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Countdown</h3>
+                        <p>This project is a solver for the British gameshow Countdown. The game consists of two games, a numbers round and a letters round. Each involves contestants taking a given set and rearranging it in some way to come up with an answer better than their opponent. For full rules, see the project's readme.md file. As every good program does, this brute forces the problem and generates every possible permutation and checks if it offers a valid solution. The best solutions are then output.</p>
+                        <p>This too is written in Python and utilizes sets, dynamic programming, and refactored, optimized code.</p>
+                        <p class="link">Check out the code on my <a href="https://github.com/samuel-luke/countdown">Github</a></p>
+                        <div class="splitContainer">
+                            <img src="images/countdown_words.png" alt="Countdown Word Round">
+                            <img src="images/countdown_numbers.png" alt="Countdown Number Round">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>JavaScript Games</h3>
+                        <p>In my collegiate game development course, we used the html canvas element and JavaScript to write realtime, interactive games that play right in your browser. The games are very simple, matching the complexity of the 1980s, but render at 60 fps and are coded entirely from scratch. Everything from the game loop to the menus are coded purely by hand after creating a number of classes to handle user input queues, cookies, particle effects, collosion logic, and a variety of algorithms.</p>
+                        <div class="splitContainer">
+                            <div>
+                                <p><b>Maze Game.</b> Firstly, we have a maze game where your character must escape an underground radioactive facility in meltdown. It uses algorithms to generate a maze and randomly place your character and the exit on each level. It also uses a shortest-path algorithm to give the fastest route. Has multiple difficulty settings.</p>
+                                <p class="link">Code here: <a href="https://github.com/samuel-luke/maze_game">Github</a></p>
+                            </div>
+                            <img src="images/maze_game.png" alt="Maze Game">
+                        </div>
+                        <div class="splitContainer">
+                            <img src="images/lander_game.png" alt="Lander Game">
+                            <div>
+                                <p><b>Lander Game.</b> This game mimics the classic "Lunar Lander" game. It not only accounts for realistic gravity and momentum, but also generates a random landscape each round with a terrain generation algorithm. </p>
+                                <p class="link">Code here: <a href="https://github.com/samuel-luke/mars_lander_game">Github</a></p>
+                            </div>
+                        </div>
+                        <div class="splitContainer">
+                            <div>
+                                <p><b>Space Invaders.</b> Battle endless rounds of viruses in this spin off of space invaders. Implements path finding, AI, multiple lives, menuing, local highscore storage, control remapping, sound effects, and particle effects.</p>
+                                <p class="link">Code here: <a href="https://github.com/samuel-luke/space_invaders_game">Github</a></p>
+                            </div>
+                            <img src="images/space_game.png" alt="Space Invaders Game">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Auctioneering Site</h3>
+                        <p>As a group project to teach the reality of working as a team and collaborating on a real functioning site, my collegiate class had small teams develop an auctioneering site intended to be used for silent auctions. A team of myself and three others created Paddle. Once the administrator adds all items to the database using a easy to use and stylish adminstrator view, users can navigate to the site and create an account. This lets them see and bid on any number of items up for sale. The site updates in real time with the highest bid holder and let's users add items to their wishlist.</p>
+                        <p>I personally designed and coded the entire frontend of the website. Likewise, I chose the colors, designed the logo, and connected everything to the backend. As a team, we won second place in a class of over 20 teams. It is coded within the framework Django, a python tool that handles the MVC and includes security features like account creation and escaped user input.</p>
+                        <p>The class included weekly scrum meetings, multiple presentations, database diagrams, and other common agile development processes.</p>
+                        <p class="link">As the code is not entirely mine, I have decided not to release the code.</p>
+                        <div class="splitContainer">
+                            <img src="images/paddle_bids.png" alt="Paddle Bids" style="width: 25vw;">
+                            <img src="images/paddle_account.png" alt="Paddle Account" style="width: 25vw;"> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section" id="about">
@@ -338,7 +403,7 @@
                     <p>I created this website as a supplement to my resume. Not only does it show a more detailed look at my previous work, but I also coded this entire (albeit static) website from scratch. It's an original design to show off my versatility. I try to focus on a simple, but attractive design. Like many modern design trends, I prefer flat, material graphics with few colors and big bold images. The colors chosen for this website follow a theme, as all good things do.</p>
                     <div class="colorSwab">
                         <div id="colorSwabBlue"></div>
-                        <p>Astronauts Blue: #81b1c9</p>
+                        <p>Astronaut Blue: #81b1c9</p>
                     </div>
                     <div class="colorSwab">
                         <div id="colorSwabGreen"></div>

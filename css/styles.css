@@ -335,12 +335,29 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     margin: 25px;
 }
 
-#skills .skill .progress {
-    background-color: #fff;
+    #skills .skill .progress {
+        background-color: #fff;
+    }
+
+    #skills .skill .progress-bar {
+        background-color: var(--primary-color-darker);
 }
 
-#skills .skill .progress-bar {
-    background-color: var(--primary-color-darker);
+
+#portfolio .project h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 50px 0;
+}
+
+#portfolio img {
+    height: auto;
+    width: 35vw;
+    margin: 25px;
+}
+
+#portfolio .splitContainer {
+    margin: 50px 0;
 }
 
 
