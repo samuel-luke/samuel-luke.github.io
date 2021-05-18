@@ -45,7 +45,6 @@ p, a, li {
 
 a {
     transition: .3s;
-    opacity: 1;
     color: var(--primary-color-darker)
 }
 
@@ -70,8 +69,19 @@ h3 {
 img {
     height: auto;
     width: 45%;
-    margin: 25px;
+    margin: 50px 50px 50px 0;
 }
+
+.screenshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .screenshot img {
+        width: 75%;
+        margin: 50px 0;
+    }
 
 .splitContainer {
     display: flex;
@@ -82,8 +92,17 @@ img {
     margin: 50px 0;
 }
 
-    .splitContainer > div, .splitContainer > p {
-        flex: 1;
+.splitContainer > div, .splitContainer > p {
+    flex: 1;
+    min-width: 300px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+    .reverse img {
+        margin: 50px 0 50px 50px;
     }
 
 .whiteCard {
@@ -163,7 +182,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     }
 
     #sections .section > div {
-        width: var(--content-size);
+        max-width: var(--content-size);
     }
 
     #sections .angle-top-right {
@@ -239,6 +258,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         background: url("../images/profile_pic2.jpg");
         width: 250px;
         height: 250px;
+        min-width: 250px;
         display: inline-block;
         background-position: 50% 50%;
         background-size: cover;
@@ -253,14 +273,10 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 /* Education */
 #education #usuLogo {
     opacity: .5;
-    width: 33vw;
-    height: auto;
-    margin-left: 50px;
 }
 
-#education #graduationPic {
-    width: 33vw;
-    height: auto;
+#education #courses ul {
+    padding-left: 0;
 }
 
 #education #courses li {
@@ -280,18 +296,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
 
 /* Experience  */
-#experience .before-after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
 
-#experience .screenshot {
-    width: 70%;
-    height: auto;
-    margin: 50px;
-}
 
 /* Skills */
 #skills h3 {
@@ -301,12 +306,13 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 #skills .icons {
     display: flex;
     justify-content: space-around;
-    margin: 50px 0;
+    flex-wrap: wrap;
 }
 
     #skills .icons img {
         width: auto;
         height: 100px;
+        margin: 25px;
     }
 
 #skills .skill {
@@ -323,6 +329,11 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
 
 /* Portfolio */
+.paddle img {
+    margin: 50px 25px;
+    min-width: 40%;
+}
+
 
 /* About */
 #about .colorSwab {
@@ -333,7 +344,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     background-color: white;
     padding: 10px 15px;
     border-radius: 5px;
-    width: 400px;
+    max-width: 400px;
 }
     #about .colorSwab > div {
         height: 50px;
@@ -358,11 +369,6 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         background-color: var(--alternate-bg-color);
     }
 
-#about img {
-    height: auto;
-    width: 33vw;
-    margin: 50px;
-}
 
 /* Footer */
 #footer {
@@ -401,7 +407,8 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     }
 
         #footer .links a {
-            padding: 0 20px;
+            padding: 20px;
+            text-align: center;
         }
 
         #footer .links a i {
@@ -420,6 +427,10 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 	:root {
 		--content-size: 992px;
 	}
+
+    img, .screenshot img {
+        width: 50%;
+    }
 
     .navbar-light .navbar-toggler {
         border: none;
@@ -450,7 +461,7 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     }
 
     #sections .section {
-        padding: 100px 75px;
+        padding: 100px;
     }
 
     #sections #home {
@@ -466,12 +477,11 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         text-align: center;
         margin: 0 auto;
         padding: 50px;
+        position: relative;
     }
 
     #home #profilePic {
         margin: 25px;
-        height: 200px;
-        width: 200px;
     }
 }
 
@@ -482,7 +492,20 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 	}
 
     #sections .section {
-        padding: 100px 50px;
+        padding: 100px 75px;
+    }
+    
+    img, .screenshot img {
+        width: 75%;
+        margin: 50px 0;
+    }
+    
+    .reverse {
+        flex-direction: row;
+    }
+
+    .reverse img {
+        margin: 50px 0;
     }
 }
 
@@ -494,6 +517,10 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 	}
 
     #sections .section {
-        padding: 100px 25px;
+        padding: 100px 50px;
+    }
+
+    img, .screenshot img {
+        width: 100%;
     }
 }

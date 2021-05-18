@@ -100,12 +100,12 @@
                             <p><b>GPA 3.8</b></p>
                         </div>
                     </div>
-                    <div class="splitContainer">
+                    <div class="splitContainer reverse">
+                        <img src="images/usu_logo.png" id="usuLogo" alt="USU Logo">
                         <div>
                             <p>I graduated from Utah State University with a Bacherlors of Science in Computer Science in December 2020. Throughout my schooling, I worked with a number of excellent professors that not only expected textbook knowledge of the subject, but also drilled practical standards into the assignments.</p></br>
                             <p>Many of my assignments were submitted using Git with strict organizational and code requirments</p>
                         </div>
-                        <img src="images/usu_logo.png" id="usuLogo" alt="USU Logo">
                     </div>
                     <h3>Key Courses</h3>
                     <div class="splitContainer">
@@ -137,7 +137,7 @@
                     <p>I worked remotely to plan and tackle layout changes and an entire content overall. I also assisted in backend bug fixes, redesigned the Administers view, created new Administrator features, and wrote new database tables and stored procedures.</p>
                     <p class="link">Link to current website: <a href="https://www.ehdi-pals.org">ehdi-pals.org</a></p>
                     
-                    <div class="before-after">
+                    <div class="screenshot">
                         <img class="screenshot" src="images/ehdipals_before-after.png" alt="EHDI-PALs Screenshot">
                     </div>
                     <div class="whiteCard greenCard">
@@ -146,8 +146,8 @@
                     </div>
                     <p>In this role, I worked on a number of eCommerce websites. Primarily, I maintained websites built using Magento2, a framework that provides a template for common ecommerce functions, like shopping carts, item pages, and a fully featured administrator view. I also used Laravel, a PHP framework to create a interface for a local business to scan documents and upload them to a database. This tapped into Google's OCR API. 
 
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <img class="screenshot" src="images/leupold.png" alt="Leupold screenshot">
+                    <div class="screenshot">
+                        <img src="images/leupold.png" alt="Leupold screenshot">
                     </div>
                     <p><b>Leupold</b> makes a variety of scopes and equipment for firearms, but they also sell merchandise for their brand. They contracted with WebArc Technologies to build this storefront, relocated here: <a href="https://www.leupoldshop.com">Leupold Shop</a>.</p>
                     <p>Personally, I was influential in moving this site from Magento v1 to Magento 2, as well as following design briefs to give it a modern look. I also managed product pages and fixed various bugs. </p>
@@ -334,8 +334,8 @@
                         <p>This is written in Python and shows my ability to create an interface even in a terminal, it also demonstrates my logical programming skills and my desire to solve common problems with coding.</p>
                         <p class="link">Check out the code on my <a href="https://github.com/samuel-luke/farkle">Github</a></p>
                         <div class="splitContainer">
-                            <img src="images/farkle_cli.png" alt="Farkle CLI">
-                            <img src="images/farkle_stats.png" alt="Farkle Stats">
+                            <img src="images/farkle_cli.png" class="mx-0" alt="Farkle CLI">
+                            <img src="images/farkle_stats.png" class="mx-0" alt="Farkle Stats">
                         </div>
                     </div>
                     <div class="project">
@@ -344,19 +344,19 @@
                         <p>This too is written in Python and utilizes sets, dynamic programming, and refactored, optimized code.</p>
                         <p class="link">Check out the code on my <a href="https://github.com/samuel-luke/countdown">Github</a></p>
                         <div class="splitContainer">
-                            <img src="images/countdown_words.png" alt="Countdown Word Round">
-                            <img src="images/countdown_numbers.png" alt="Countdown Number Round">
+                            <img src="images/countdown_words.png" class="mx-0" alt="Countdown Word Round">
+                            <img src="images/countdown_numbers.png" class="mx-0" alt="Countdown Number Round">
                         </div>
                     </div>
                     <div class="project">
                         <h3>JavaScript Games</h3>
                         <p>In my collegiate game development course, we used the html canvas element and JavaScript to write realtime, interactive games that play right in your browser. The games are very simple, matching the complexity of the 1980s, but render at 60 fps and are coded entirely from scratch. Everything from the game loop to the menus are coded purely by hand after creating a number of classes to handle user input queues, cookies, particle effects, collosion logic, and a variety of algorithms.</p>
-                        <div class="splitContainer">
+                        <div class="splitContainer reverse">
+                            <img src="images/maze_game.png" alt="Maze Game">
                             <div>
                                 <p><b>Maze Game.</b> Firstly, we have a maze game where your character must escape an underground radioactive facility in meltdown. It uses algorithms to generate a maze and randomly place your character and the exit on each level. It also uses a shortest-path algorithm to give the fastest route. Has multiple difficulty settings.</p>
                                 <p class="link">Code here: <a href="https://github.com/samuel-luke/maze_game">Github</a></p>
                             </div>
-                            <img src="images/maze_game.png" alt="Maze Game">
                         </div>
                         <div class="splitContainer">
                             <img src="images/lander_game.png" alt="Lander Game">
@@ -365,12 +365,12 @@
                                 <p class="link">Code here: <a href="https://github.com/samuel-luke/mars_lander_game">Github</a></p>
                             </div>
                         </div>
-                        <div class="splitContainer">
+                        <div class="splitContainer reverse">
+                            <img src="images/space_game.png" alt="Space Invaders Game">
                             <div>
                                 <p><b>Space Invaders.</b> Battle endless rounds of viruses in this spin off of space invaders. Implements path finding, AI, multiple lives, menuing, local highscore storage, control remapping, sound effects, and particle effects.</p>
                                 <p class="link">Code here: <a href="https://github.com/samuel-luke/space_invaders_game">Github</a></p>
                             </div>
-                            <img src="images/space_game.png" alt="Space Invaders Game">
                         </div>
                     </div>
                     <div class="project">
@@ -379,9 +379,9 @@
                         <p>I personally designed and coded the entire frontend of the website. Likewise, I chose the colors, designed the logo, and connected everything to the backend. As a team, we won second place in a class of over 20 teams. It is coded within the framework Django, a python tool that handles the MVC and includes security features like account creation and escaped user input.</p>
                         <p>The class included weekly scrum meetings, multiple presentations, database diagrams, and other common agile development processes.</p>
                         <p class="link">As the code is not entirely mine, I have decided not to release the code.</p>
-                        <div class="splitContainer">
-                            <img src="images/paddle_bids.png" alt="Paddle Bids" style="width: 25vw;">
-                            <img src="images/paddle_account.png" alt="Paddle Account" style="width: 25vw;"> 
+                        <div class="splitContainer paddle">
+                            <img src="images/paddle_bids.png" alt="Paddle Bids">
+                            <img src="images/paddle_account.png" alt="Paddle Account"> 
                         </div>
                     </div>
                 </div>
@@ -414,17 +414,17 @@
                         <img src="images/sam.jpg" alt="Sam">
                         <p>Now a little about me, I am <span id="age">22</span> years old, born in Utah. I am a big advocate of open-source technologies. I like reading, podcasts, and spend too much time lurking on Twitter. My given name is Samuel, but I'm not named after the biblical prophet, rather I'm named after Dr. Samuel Beckett, the time traveller from Quantum Leap; thanks Dad. I'm by no means an artist, but I enjoy graphic design and web design. I like to think about colors, contrast, placement, and what looks good. I hope to get into photography soon. </p>
                     </div>
-                    <div class="splitContainer">
-                        <p>I'm currently living in SLC with my beautiful partner Abby and a cat named Fear. Which is a big improvement from the closet I called a bedroom during my undergrad. She is a Civil Engineer working for WSP. To her dismay, she is the resident drainage expert on the program GeoPak, a piece of software that hasn't been updated since the 80s.</br></br>My thanks to her for all the images used on this website.</p>
+                    <div class="splitContainer reverse">
                         <img src="images/abby_restaurant.jpg" alt="My partner, Abby">
+                        <p>I'm currently living in SLC with my beautiful partner Abby and a cat named Fear. Which is a big improvement from the closet I called a bedroom during my undergrad. She is a Civil Engineer working for WSP. To her dismay, she is the resident drainage expert on the program GeoPak, a piece of software that hasn't been updated since the 80s.</br></br>My thanks to her for all the images used on this website.</p>
                     </div>
                     <div class="splitContainer">
                         <img src="images/fear_silly.jpg" alt="My cat, Fear">
                         <p>Fear was found in a dumpster and she wants nothing more than to go back. She will fiercly demand that any cardboard boxes are left out for her to sit in and any packing paper is hers to rip up.</p>
                     </div>
-                    <div class="splitContainer">
-                        <p>In my free time I'm usually cooking or watching cooking shows. Pictured to the side is a loaf of Sourdough I made. I also love to sit down and watch long instructional videos on machining, woodworking, and lockpicking despite living in a 2 bedroom apartment in the city. </p>
+                    <div class="splitContainer reverse">
                         <img src="images/bread.jpg" alt="Sourdough">
+                        <p>In my free time I'm usually cooking or watching cooking shows. Pictured to the side is a loaf of Sourdough I made. I also love to sit down and watch long instructional videos on machining, woodworking, and lockpicking despite living in a 2 bedroom apartment in the city. </p>
                     </div>
                     <p class="link">Thanks For visiting my page, feel free to contact me at the links below.</p>
                 </div>
