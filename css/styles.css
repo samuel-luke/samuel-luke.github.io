@@ -2,7 +2,7 @@
 :root {
 	--main-bg-color: #fff;
     --alternate-bg-color: #FFF8E7;
-	--content-size: 1140px;
+	--content-size: 1200px;
 	--font-color: #444;
 	--font-color-inverted: #ddd;
 	--primary-color: #81b1c9;
@@ -44,13 +44,13 @@ p, a, li {
 }
 
 a {
-    text-decoration: none;
     transition: .3s;
     opacity: 1;
     color: var(--primary-color-darker)
 }
 
 a:hover {
+    text-decoration: none;
     color: black
 }
 
@@ -61,18 +61,44 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
 }
 
+h3 {
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+img {
+    height: auto;
+    width: 45%;
+    margin: 25px;
+}
+
 .splitContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
 }
 
+    .splitContainer > div, .splitContainer > p {
+        flex: 1;
+    }
+
 .whiteCard {
-    margin: 20px 0;
+    margin: 50px 0;
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
+}
+
+    .whiteCard p {
+        margin-bottom: 0;
+    }
+
+.greenCard {
+    background-color: var(--secondary-color);
 }
 
 .subtle {
@@ -86,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 25px 0;
 }
 
+/* Navigation */
 nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     background-color: var(--primary-color);
     padding: 0 25px;
@@ -112,84 +139,79 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         justify-content: end;
     }
 
-    nav #navLinks a {
-        padding: 0 10px;
-        display: flex;
-    }
+        nav #navLinks a {
+            padding: 0 10px;
+            display: flex;
+        }
 
-    nav #navLinks i {
-        font-size: 24px;
-    }
+        nav #navLinks i {
+            font-size: 24px;
+        }
 
-#sections {
-    width: 100%;
+/* Sections */
+#sections .section {
+    scroll-margin-top: 100px;
+    padding: 100px;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-
-    #sections .section {
-        scroll-margin-top: 100px;
-        padding: 100px 150px;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
+    #sections .section:nth-child(even) {
+        background-color: var(--secondary-color);
     }
 
-        #sections .section:nth-child(even) {
-            background-color: var(--secondary-color);
-        }
-    
-        #sections .section > div {
-            width: var(--content-size);
-        }
+    #sections .section > div {
+        width: var(--content-size);
+    }
 
-        #sections .angle-top-right {
-            height: 0;
-            border-bottom: 50px solid var(--secondary-color);
-            border-left: 100vw solid transparent;
-            margin-top: -149px;
-            position: absolute;
-            left: 0;
-        }
+    #sections .angle-top-right {
+        height: 0;
+        border-bottom: 50px solid var(--secondary-color);
+        border-left: 100vw solid transparent;
+        margin-top: -149px;
+        position: absolute;
+        left: 0;
+    }
 
-        #sections .angle-top-left {
-            height: 0;
-            border-bottom: 50px solid var(--secondary-color);
-            border-right: 100vw solid transparent;
-            margin-top: -149px;
-            position: absolute;
-            left: 0;
-        }
+    #sections .angle-top-left {
+        height: 0;
+        border-bottom: 50px solid var(--secondary-color);
+        border-right: 100vw solid transparent;
+        margin-top: -149px;
+        position: absolute;
+        left: 0;
+    }
 
-        #sections .angle-bottom-right {
-            height: 0;
-            border-top: 50px solid var(--secondary-color);
-            border-left: 100vw solid transparent;
-            margin-top: -100px;
-            position: absolute;
-            left: 0;
-        }
+    #sections .angle-bottom-right {
+        height: 0;
+        border-top: 50px solid var(--secondary-color);
+        border-left: 100vw solid transparent;
+        margin-top: -100px;
+        position: absolute;
+        left: 0;
+    }
 
-        #sections .angle-bottom-left {
-            height: 0;
-            border-top: 50px solid var(--secondary-color);
-            border-right: 100vw solid transparent;
-            margin-top: -100px;
-            position: absolute;
-            left: 0;
-        }
+    #sections .angle-bottom-left {
+        height: 0;
+        border-top: 50px solid var(--secondary-color);
+        border-right: 100vw solid transparent;
+        margin-top: -100px;
+        position: absolute;
+        left: 0;
+    }
 
-        #sections .section div h2 {
-            letter-spacing: 3px;
-            border-left: 8px solid var(--primary-color);
-            padding-left: 20px;
-            margin-bottom: 25px;
-        }
+    #sections .section div h2 {
+        letter-spacing: 3px;
+        border-left: 8px solid var(--primary-color);
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
 
 
-#sections #home {
+/* Home */
+#home {
     background-image: url("../images/cottonwood_heights.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -200,124 +222,80 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 }
 
     #home .splitContainer {
-        justify-content: start;
-        align-items: center;
-        flex-wrap: wrap;
         background-color: rgba(50,50,50,.6);
         border-radius: 0 30px 30px 0;
-        margin-left: -150px;
-        padding: 20px 50px 20px 100px; 
+        padding: 20px 100px;
+        position: absolute;
+        left: 0;
     }
 
-    #home .splitContainer div {
+    #home h1, #home h4, #home p {
+        color: var(--font-color-inverted);
+        text-shadow: 0px 2px 2px black;
         width: auto;
     }
 
-        #home h1, #home h4, #home p {
-            color: var(--font-color-inverted);
-            text-shadow: 0px 2px 2px black;
-            width: auto;
-        }
-
-        #home #profilePic {
-            background: url("../images/profile_pic2.jpg");
-            width: 250px;
-            height: 250px;
-            display: inline-block;
-            background-position: 50% 50%;
-            background-size: cover;
-            border-radius: 50%;
-            border: 10px solid white;
-            box-shadow: 0px 2px 2px black;
-            margin-right: 50px;
-        }
-
-
-/* #sections #education {
-} */
-
-    #education #usuLogo {
-        opacity: .5;
-        width: auto;
-        height: 60vh;
-        margin-left: 50px;
+    #home #profilePic {
+        background: url("../images/profile_pic2.jpg");
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        border: 10px solid white;
+        box-shadow: 0px 2px 2px black;
+        margin-right: 50px;
+        flex: inherit;
     }
 
-    #education #graduationPic {
-        width: auto;
-        height: 75vh;
-    }
 
-    #education .splitContainer {
-        margin-bottom: 100px;
-        justify-content: space-between;
-    }
+/* Education */
+#education #usuLogo {
+    opacity: .5;
+    width: 33vw;
+    height: auto;
+    margin-left: 50px;
+}
 
-    #education .splitContainer p {
-        margin-bottom: 0;
-    }
+#education #graduationPic {
+    width: 33vw;
+    height: auto;
+}
 
-    #education #courses {
-        flex: 1;
-    }
-        #education #courses h3 {
-            text-align: center;
-            margin-bottom: 25px;
-        }
+#education #courses li {
+    list-style-type: none;
+    margin: 20px 0;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 14px;
+}
 
-        #education #courses b {
-            font-size: 18px;
-            opacity: 1;
-        }
-
-        #education #courses li {
-            list-style-type: none;
-            margin: 20px 0;
-            background-color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            width: 90%;
-            font-size: 14px;
-            opacity: .8;
-        }
-
-        #education #courses li:nth-child(even) {
-            margin-left: auto;
-            text-align: right;
-        }
+#education #courses li:nth-child(even) {
+    margin-left: auto;
+    text-align: right;
+}
 
 
-/* #experience  */
+/* Experience  */
+#experience .before-after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
 
-    #experience .jobCard {
-        margin: 50px 0;
-        background-color: var(--secondary-color);
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-    
-    #experience .jobCard p {
-        margin-bottom: 0;
-    }
+#experience .screenshot {
+    width: 70%;
+    height: auto;
+    margin: 50px;
+}
 
-    #experience .before-after {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 50px;
-    }
-
-    #experience .screenshot {
-        width: 70%;
-        height: auto;
-        margin: auto;
-        margin: 25px 0;
-    }
-
+/* Skills */
 #skills h3 {
-    margin: 100px 0 50px;
-    text-align: center;
-    letter-spacing: 3px;
+    margin-top: 100px;
 }
 
 #skills .icons {
@@ -344,23 +322,9 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 }
 
 
-#portfolio .project h3 {
-    text-align: center;
-    letter-spacing: 3px;
-    margin: 50px 0;
-}
+/* Portfolio */
 
-#portfolio img {
-    height: auto;
-    width: 35vw;
-    margin: 25px;
-}
-
-#portfolio .splitContainer {
-    margin: 50px 0;
-}
-
-
+/* About */
 #about .colorSwab {
     display: flex;
     justify-content: space-between;
@@ -371,12 +335,6 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     border-radius: 5px;
     width: 400px;
 }
-    #about h3 {
-        margin: 100px 0 50px;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-
     #about .colorSwab > div {
         height: 50px;
         width: 50px;
@@ -402,11 +360,11 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 
 #about img {
     height: auto;
-    width: 25vw;
+    width: 33vw;
     margin: 50px;
 }
 
-
+/* Footer */
 #footer {
     width: 100%;
     min-height: 500px;
@@ -422,13 +380,18 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
         opacity: .9;
     }
 
-    #footer a:hover {
-        color: black;
-    }
+        #footer a:hover {
+            opacity: 1;
+            color: black;
+        }
 
     #footer h3 {
-        text-align: center;
-        letter-spacing: 3px;
+        margin:  0 0 25px;
+    }
+
+    #footer img {
+        height: 100px;
+        width: auto;
     }
 
     #footer .links{
@@ -445,9 +408,92 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
             padding-left: 5px;
         }
 
-        #footer #resumeLink {
-            font-size: 20px;
-            border: 2px solid var(--font-color);
-            padding: 3px 10px;
-            border-radius: 5px;
-        }
+    #footer #resumeLink {
+        font-size: 20px;
+        border: 2px solid var(--font-color);
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+
+/* Mobile */
+@media screen and (max-width: 1200px) {
+	:root {
+		--content-size: 992px;
+	}
+
+    .navbar-light .navbar-toggler {
+        border: none;
+        color: black;
+    }
+
+    .navbar-brand {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    
+    nav #navigationbar {
+        text-align: center;
+        background-color: var(--primary-color);
+        width: 100vw;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    nav #navLinks {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 25px;
+    }
+
+    #sections .section {
+        padding: 100px 75px;
+    }
+
+    #sections #home {
+        justify-content: end;
+        padding: 0;
+        background-size: cover;
+        min-height: 75vh;
+    }
+
+    #home .splitContainer {
+        justify-content: center;
+        border-radius: 30px 30px 0 0;
+        text-align: center;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    #home #profilePic {
+        margin: 25px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+	:root {
+		--content-size: 600px;
+	}
+
+    #sections .section {
+        padding: 100px 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+	:root {
+		--content-size: 90vw;
+		--header-font-size: 24px;
+	}
+
+    #sections .section {
+        padding: 100px 25px;
+    }
+}
