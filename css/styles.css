@@ -294,6 +294,10 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     text-align: right;
 }
 
+.rightAlign {
+    text-align: right;
+}
+
 
 /* Experience  */
 
@@ -481,7 +485,10 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     }
 
     #home #profilePic {
-        margin: 25px;
+        height: 200px;
+        width: 200px;
+        min-width: 200px;
+        margin: 0 25px 25px;
     }
 }
 
@@ -489,15 +496,51 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 @media screen and (max-width: 992px) {
 	:root {
 		--content-size: 600px;
+        --content-font-size: 16px;
+        --header-font-size: 24px;
 	}
 
+    nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
+        height: 8vh;
+    }
+
+    .navbar-brand {
+        height: 8vh;
+        font-size: var(--header-font-size);
+    }
+
     #sections .section {
-        padding: 100px 75px;
+        padding: 75px 50px;
+        scroll-margin-top: 50px;
+    }
+
+    #sections .angle-top-right, #sections .angle-top-left {
+        margin-top: -124px;
+    }
+
+    #sections .angle-bottom-right, #sections .angle-bottom-left {
+        margin-top: -75px;
+    }
+
+    #sections .section div h2 {
+        margin: 25px auto;
+        border: none;
+        border-bottom: 5px solid var(--primary-color);
+        width: min-content;
+        padding: 0 0 10px;
+    }
+
+    h3 {
+        margin: 25px 0;
     }
     
     img, .screenshot img {
         width: 75%;
-        margin: 50px 0;
+        margin: 25px 0;
+    }
+
+    .subtle {
+        font-size: 14px;
     }
     
     .reverse {
@@ -505,7 +548,35 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
     }
 
     .reverse img {
-        margin: 50px 0;
+        margin: 25px 0;
+    }
+
+    .whiteCard {
+        text-align: center;
+    }
+
+    .whiteCard p:first-child {
+        margin-bottom: 5px;
+    }
+
+    .rightAlign {
+        text-align: center;
+        display: inline-flex;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    #skills .icons img {
+        height: 75px;
+    }
+
+    #skills h3 {
+        margin-top: 50px;
+    }
+
+    #footer {
+        min-height: 400px;
+        padding: 50px;
     }
 }
 
@@ -513,11 +584,20 @@ nav.navbar.navbar-expand-lg.sticky-top.navbar-light {
 @media screen and (max-width: 600px) {
 	:root {
 		--content-size: 90vw;
-		--header-font-size: 24px;
+        --content-font-size: 14px;
+		--header-font-size: 18px;
 	}
 
     #sections .section {
-        padding: 100px 50px;
+        padding: 50px 25px;
+    }
+
+    #sections .angle-top-right, #sections .angle-top-left {
+        margin-top: -99px;
+    }
+
+    #sections .angle-bottom-right, #sections .angle-bottom-left {
+        margin-top: -50px;
     }
 
     img, .screenshot img {
